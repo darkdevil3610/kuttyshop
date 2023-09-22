@@ -18,7 +18,7 @@ function Subscribe() {
       <div className="boxImgSub">
         <img
           className="boxSubImg"
-          src="https://cdn.discordapp.com/attachments/772232222220615710/983061210499002388/setupGray_1.jpg"
+          src="https://lh5.googleusercontent.com/p/AF1QipPwyh9NPYZV88iblKmkYXffV0NbjUXaBwPwxVWW"
           alt="set up gray"
         />
         <div className="degradedSub" />
