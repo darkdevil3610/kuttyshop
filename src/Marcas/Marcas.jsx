@@ -16,7 +16,7 @@ function Marcas() {
         <div className="marcaBoxImgBg">
           <img
             className="marcaBoxImg"
-            src="https://imgur.com/r9YysEo"
+            src="https://lh5.googleusercontent.com/p/AF1QipPwyh9NPYZV88iblKmkYXffV0NbjUXaBwPwxVWW"
             alt="background"
           />
           <div className="marcaDegraded" />
