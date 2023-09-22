@@ -31,9 +31,9 @@ function Tiendas() {
     <div className="Tiendas">
       <div className=" titleBoxTienda">
         <h1 className="titleTienda">
-          <span className="parteTitle">CONOCE</span>
-          <span className="parteTitle">NUESTRAS</span>
-          <span className="parteTitle">TIENDAS</span>
+          <span className="parteTitle">KNOWN</span>
+          <span className="parteTitle">OWER</span>
+          <span className="parteTitle">STORES</span>
         </h1>
         <img
           src="https://www.clipartmax.com/png/full/197-1970940_mark-ogrady-boneco-vendedor-png.png"
