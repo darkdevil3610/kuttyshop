@@ -39,7 +39,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/products/:category" element={<Category />} />
         <Route path="/products/item/:productId" element={<PageToItem />} />
-        <Route path="/brand" element={<Marcas />} />
+        <Route path="/brand" element={<Brands />} />
         <Route path="/shops" element={<Tiendas />} />
         <Route path="/buy" element={<Buy />} />
         <Route path="/login" element={<LoginForm />} />
