@@ -33,7 +33,7 @@ const products = {
 function SecundaryProducts() {
   return (
     <div className="SECPrimaryProducts">
-      <span className="SECtitleProducts">Aprovecha el descuento</span>
+      <span className="SECtitleProducts">Take advantage of the discount</span>
       <div className="SECboxProducts">
         <ProductLeft
           product={products.left}
