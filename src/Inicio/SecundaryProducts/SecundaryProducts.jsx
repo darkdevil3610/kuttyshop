@@ -54,9 +54,9 @@ function SecundaryProducts() {
         </div>
       </div>
       <span className="SECviewMoreProducts">
-        Descubre más productos
+        Discover more products 
         {' '}
-        <a href="/" className="SEClinkViewMore underline">Aquí</a>
+        <a href="/" className="SEClinkViewMore underline">Here</a>
       </span>
     </div>
   );
