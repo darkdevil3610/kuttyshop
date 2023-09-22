@@ -6,7 +6,7 @@ import ColumsFooter from '../ColumsFooter/ColumsFooter';
 
 const textApi = [
   {
-    title: 'PRODUCTOS',
+    title: 'PRODUCTS',
     content: [
       { name: 'Smartphones', url: '/' },
       { name: 'PC', url: '/' },
@@ -19,32 +19,32 @@ const textApi = [
     key: '1',
   },
   {
-    title: 'SOPORTE',
+    title: 'MEDIUM',
     content: [
-      { name: 'Ubicación de Centros de Servicios', url: '/' },
-      { name: 'Consulta de Precios de Piezas', url: '/' },
-      { name: 'Libro de Reclamaciones', url: '/' },
-      { name: 'Servicio de Soporte Técnico', url: '/' },
+      { name: 'Location of Service Centers', url: '/' },
+      { name: 'Parts Price Inquiry', url: '/' },
+      { name: 'Complaints book', url: '/' },
+      { name: 'Technical Support Service', url: '/' },
     ],
     key: '2',
   },
   {
-    title: 'CONTACTENOS',
+    title: 'CONTACT US',
     content: [
-      { name: 'Ayuda y soporte', url: '/' },
-      { name: 'Chat en vivo', url: '/' },
-      { name: 'Dudas y sugerencias', url: '/' },
+      { name: 'Help and Support', url: '/' },
+      { name: 'Live chat', url: '/' },
+      { name: 'Doubts and suggestions', url: '/' },
     ],
     key: '3',
   },
   {
-    title: 'CONOCENOS',
+    title: 'KNOW US',
     content: [
-      { name: 'Acerca de nosotros', url: '/' },
-      { name: 'HUAWEI Group', url: '/' },
-      { name: 'HUAWEI Enterprise', url: '/' },
-      { name: 'Únete a nosotros', url: '/' },
-      { name: 'Contáctanos', url: '/' },
+      { name: 'About us', url: '/' },
+      { name: 'Vhse Group', url: '/' },
+      { name: 'Vhse Enterprise', url: '/' },
+      { name: 'Join us', url: '/' },
+      { name: 'Contact us', url: '/' },
     ],
 
     key: '4',
@@ -56,7 +56,7 @@ const redes = {
   reds: {
     facebook: 'https://www.facebook.com/',
     whatsapp: 'https://www.whatsapp.com/',
-    instagram: 'https://www.instagram.com/',
+    instagram: 'https://www.instagram.com/dark_devil_3609',
   },
 };
 
