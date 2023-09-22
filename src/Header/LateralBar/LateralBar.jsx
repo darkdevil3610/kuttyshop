@@ -7,19 +7,19 @@ function LateralBar({ open, func }) {
   return (
     <ul className={`NavMobile ${open && 'NavMobileView'}`}>
       <li className="li">
-        <a className="link navLink underline" href="/">Inicio</a>
+        <a className="link navLink underline" href="/">Start</a>
       </li>
       <li className="li">
-        <a className="link navLink underline" href="/products">Productos</a>
+        <a className="link navLink underline" href="/products">Products</a>
       </li>
       <li className="li">
-        <a className="link navLink underline" href="/brand">Marcas</a>
+        <a className="link navLink underline" href="/brand">Brands</a>
       </li>
       <li className="li">
-        <a className="link navLink underline" href="/shops">Tiendas</a>
+        <a className="link navLink underline" href="/shops">Stores</a>
       </li>
       <li className="li">
-        <a className="link navLink underline" href="/buy">Comprar</a>
+        <a className="link navLink underline" href="/buy">buy</a>
       </li>
       <button type="button" className="btnExit pointer" onClick={func}>
         <FontAwesomeIcon icon={faX} size="2x" />
