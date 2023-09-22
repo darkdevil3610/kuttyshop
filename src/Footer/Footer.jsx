@@ -52,7 +52,7 @@ const textApi = [
 ];
 
 const redes = {
-  title: 'SIGUENOS',
+  title: 'CONTACT',
   reds: {
     facebook: 'https://www.facebook.com/',
     whatsapp: 'https://www.whatsapp.com/',
