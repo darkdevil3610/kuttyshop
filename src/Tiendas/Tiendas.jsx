@@ -28,7 +28,7 @@ function Tiendas() {
   const arrShops = Object.entries(shops);
 
   return (
-    <div className="Tiendas">
+    <div className="Shopes">
       <div className=" titleBoxTienda">
         <h1 className="titleTienda">
           <span className="parteTitle">KNOWN</span>
