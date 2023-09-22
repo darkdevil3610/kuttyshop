@@ -16,13 +16,13 @@ function Marcas() {
         <div className="marcaBoxImgBg">
           <img
             className="marcaBoxImg"
-            src="https://homeofficehacks.com/wp-content/uploads/2022/04/gaming-space.jpg"
+            src="https://imgur.com/r9YysEo"
             alt="background"
           />
           <div className="marcaDegraded" />
         </div>
         <div className="marcaTextBg">
-          Marcas
+          Brands
         </div>
       </div>
 
@@ -34,10 +34,10 @@ function Marcas() {
       <div className="footerMarcas">
         <div className="boxTextFooter">
           <span className="">
-            CONSULTA
+             CONSULTATION
           </span>
           <span className="spanTitleFooter">
-            EN TIENDA
+            IN SHOP
           </span>
         </div>
         <div className="listMarcas">
