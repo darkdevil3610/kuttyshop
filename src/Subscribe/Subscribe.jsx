@@ -7,7 +7,7 @@ function Subscribe() {
   return (
     <div className="Subscribe">
       <form className="formSub">
-        <span className="degradedText">¡REGÍSTRATE Y RECIBE OFERTAS EXCLUSIVAS!</span>
+        <span className="degradedText">REGISTER AND RECEIVE EXCLUSIVE OFFERS!</span>
         <div className="inputBtnSub">
           <input className="inputSub" type="email" name="email" id="email" placeholder="example@gmail.com" required />
           <button type="submit" className="btnSub pointer">
