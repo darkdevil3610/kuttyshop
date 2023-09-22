@@ -44,7 +44,7 @@ function PrimaryProducts({ images, texts }) {
       <span className="viewMoreProducts">
         Discover more products Here
         {' '}
-        <a href="/" className="linkViewMore underline">Aquí</a>
+        <a href="/" className="linkViewMore underline">Click</a>
       </span>
     </div>
   );
