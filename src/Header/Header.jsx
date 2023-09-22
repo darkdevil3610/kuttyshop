@@ -45,19 +45,19 @@ function Header() {
       <div className="rigth">
         <ul className={`Nav ${open && 'NavView'}`}>
           <li className="li">
-            <Link className="link navLink underline" to="/">Inicio</Link>
+            <Link className="link navLink underline" to="/">Start</Link>
           </li>
           <li className="li">
-            <Link className="link navLink underline" to="/products">Productos</Link>
+            <Link className="link navLink underline" to="/products">Products</Link>
           </li>
           <li className="li">
-            <Link className="link navLink underline" to="/brand">Marcas</Link>
+            <Link className="link navLink underline" to="/brand">Brands</Link>
           </li>
           <li className="li">
-            <Link className="link navLink underline" to="/shops">Tiendas</Link>
+            <Link className="link navLink underline" to="/shops">Stores</Link>
           </li>
           <li className="li">
-            <Link className="link navLink underline" to="/buy">Comprar</Link>
+            <Link className="link navLink underline" to="/buy">Buy</Link>
           </li>
         </ul>
         <div className="boxbtnAndModal">
