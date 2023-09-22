@@ -18,7 +18,7 @@ function PrimaryProducts({ images, texts }) {
   const txtRB = texts.find(findID('64b2ee14abfda49049469e3e'));
   return (
     <div className="PrimaryProducts">
-      <span className="titleProducts">Productos Top</span>
+      <span className="titleProducts">Top Products</span>
       <div className="boxProducts">
         <ProductLeft
           image={imgL}
@@ -42,7 +42,7 @@ function PrimaryProducts({ images, texts }) {
         </div>
       </div>
       <span className="viewMoreProducts">
-        Descubre más productos
+        Discover more products Here
         {' '}
         <a href="/" className="linkViewMore underline">Aquí</a>
       </span>
