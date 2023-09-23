@@ -39,11 +39,11 @@ function PageToItem() {
         </span>
         <div className="box1Item">
           <div className="box2Item">
-            <label className="labelCantItem" htmlFor="num">CANTIDAD</label>
+            <label className="labelCantItem" htmlFor="num">AMOUNT</label>
             <input className="inputCantItem" type="number" name="num" id="num" value={1} />
           </div>
           <div className="box2Item">
-            <button className="btnGetItem pointer" type="button">Agregar al carro</button>
+            <button className="btnGetItem pointer" type="button">Add to cart</button>
           </div>
         </div>
         <div className="boxTextItem">
