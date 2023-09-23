@@ -52,13 +52,13 @@ function Item({
         </div>
       </Link>
       <button onClick={addItem} type="button" className="addCardButton pointer">
-        Agregar al carro
+        Add to cart
       </button>
       <div className={`boxAddItemHidden  ${modal && 'boxAddItem'}`}>
-        Producto añadido al carro.
+        product add to cart
       </div>
       <div className={`boxAddItemHidden  ${badModal && 'boxAddItem'}`} style={{ color: 'red' }}>
-        Primero inicia sesion
+        First login
       </div>
     </div>
   );
