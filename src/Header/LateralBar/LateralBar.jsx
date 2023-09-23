@@ -19,7 +19,7 @@ function LateralBar({ open, func }) {
         <a className="link navLink underline" href="/shops">Stores</a>
       </li>
       <li className="li">
-        <a className="link navLink underline" href="https://first-page-admin-page.vercel.app/">Admin</a>
+        <a className="link navLink underline" href="https://kuttyshop-admin.vercel.app/">Admin</a>
       </li>
       <button type="button" className="btnExit pointer" onClick={func}>
         <FontAwesomeIcon icon={faX} size="2x" />
