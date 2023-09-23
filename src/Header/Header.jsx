@@ -57,7 +57,7 @@ function Header() {
             <Link className="link navLink underline" to="/shops">Stores</Link>
           </li>
           <li className="li">
-            <Link className="link navLink underline" href="https://first-page-admin-page.vercel.app/">Buy</Link>
+            <Link className="link navLink underline" to="/buy">Buy</Link>
           </li>
         </ul>
         <div className="boxbtnAndModal">
