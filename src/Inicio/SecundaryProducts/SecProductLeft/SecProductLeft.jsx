@@ -106,7 +106,7 @@ function ProductLeft({ product, isAndroid, isMobile }) {
             animate={btnAnimationShow}
             variants={variantes}
           >
-            Comprar
+            Show
           </motion.button>
         </motion.div>
       )}
