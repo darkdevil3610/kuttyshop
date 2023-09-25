@@ -9,8 +9,8 @@ import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 const imgs = [
   {
-    src: 'https://consumer.huawei.com/content/dam/huawei-cbg-site/ecommerce/pe/events/smartoffice22/kvs/MateBook-D14WEB.webp',
-    srcMovil: 'https://consumer.huawei.com/content/dam/huawei-cbg-site/ecommerce/pe/events/smartoffice22/kvs/MateBook-D14-WAP.webp',
+    src: 'https://i.pinimg.com/736x/8d/76/b7/8d76b7681c9ed60d735b885e22a243e9.jpg',
+    srcMovil: 'https://i.pinimg.com/736x/8d/76/b7/8d76b7681c9ed60d735b885e22a243e9.jpg',
     alt: 'sliderImg',
     key: '1',
   },
