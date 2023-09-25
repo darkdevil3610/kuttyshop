@@ -23,8 +23,8 @@ function SearchBar() {
     <div className="SearchBar">
       <span className="SBtitle">Filters</span>
       <div className="SBboxBTN">
-        <button className="SBbtn pointer" type="button">Limpiar</button>
-        <button className="SBbtn pointer" type="button">Filtrar</button>
+        <button className="SBbtn pointer" type="button">Clear</button>
+        <button className="SBbtn pointer" type="button">Filter</button>
       </div>
       <div className="SBboxPrecio">
         <span className="SBBtitle">Price</span>
