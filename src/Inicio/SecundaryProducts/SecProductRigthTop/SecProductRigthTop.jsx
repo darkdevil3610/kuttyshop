@@ -85,7 +85,7 @@ function ProductRigthTop({ isMobile, isAndroid, product }) {
               className="SECpointer btnProduct"
               type="button"
             >
-              Comprar
+              Show
             </button>
           </div>
         )}
@@ -105,7 +105,7 @@ function ProductRigthTop({ isMobile, isAndroid, product }) {
               animate={btnAnimationShow}
               variants={variantes}
             >
-              Comprar
+              Show
             </motion.button>
           </div>
         )}
