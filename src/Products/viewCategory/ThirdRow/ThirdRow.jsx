@@ -22,7 +22,7 @@ function ThirdRow({ image, text }) {
             className="pointer btnProduct btnTR"
             type="button"
           >
-            Conoce mas
+            Learn More
           </Link>
         </div>
       </div>
@@ -35,7 +35,7 @@ function ThirdRow({ image, text }) {
             className="pointer btnProduct btnTR"
             type="button"
           >
-            Conoce mas
+            Learn More
           </Link>
         </div>
       </div>
@@ -48,7 +48,7 @@ function ThirdRow({ image, text }) {
             className="pointer btnProduct btnTR"
             type="button"
           >
-            Conoce mas
+            Learn More
           </Link>
         </div>
       </div>
