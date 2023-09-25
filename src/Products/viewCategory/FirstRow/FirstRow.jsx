@@ -19,7 +19,7 @@ function FirstRow({ image, text }) {
             className="pointer btnProduct btnFR"
             type="button"
           >
-            Conoce mas
+            Learn More
 
           </Link>
         </div>
@@ -36,7 +36,7 @@ function FirstRow({ image, text }) {
             className="pointer btnProduct btnFR"
             type="button"
           >
-            Conoce mas
+            Learn More
 
           </Link>
         </div>
