@@ -85,7 +85,7 @@ function ProductRigthBottom({ isMobile, isAndroid, product }) {
               className="SECpointer SECbtnProduct"
               type="button"
             >
-              Comprar
+              Show
             </button>
           </div>
         )}
@@ -105,7 +105,7 @@ function ProductRigthBottom({ isMobile, isAndroid, product }) {
               animate={btnAnimationShow}
               variants={variantes}
             >
-              Comprar
+              Show
             </motion.button>
           </div>
         )}
