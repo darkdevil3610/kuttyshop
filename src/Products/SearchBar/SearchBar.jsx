@@ -4,34 +4,34 @@ import React from 'react';
 function SearchBar() {
   const marcas = [
     {
-      name: 'Redragon',
+      name: 'Kuttyshop',
     },
     {
-      name: 'Logitech',
+      name: 'Tkdm',
     },
     {
-      name: 'Vsg',
+      name: 'Shop',
     },
     {
-      name: 'Huawei',
+      name: 'Brand1',
     },
     {
-      name: 'Samsung',
+      name: 'Brand2',
     },
   ];
   return (
     <div className="SearchBar">
-      <span className="SBtitle">Filtros</span>
+      <span className="SBtitle">Filters</span>
       <div className="SBboxBTN">
         <button className="SBbtn pointer" type="button">Limpiar</button>
         <button className="SBbtn pointer" type="button">Filtrar</button>
       </div>
       <div className="SBboxPrecio">
-        <span className="SBBtitle">Precio</span>
+        <span className="SBBtitle">Price</span>
         <div className="SBprecioBox">
-          <input className="inputPrecio" type="number" name="min" placeholder="Minimo" />
+          <input className="inputPrecio" type="number" name="min" placeholder="Min" />
           -
-          <input className="inputPrecio" type="number" name="max" placeholder="Maximo" />
+          <input className="inputPrecio" type="number" name="max" placeholder="Max" />
         </div>
       </div>
       <div className="SBboxMarca">
