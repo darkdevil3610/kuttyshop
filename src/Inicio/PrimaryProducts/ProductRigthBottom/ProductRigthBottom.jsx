@@ -87,7 +87,7 @@ function ProductRigthBottom({
               className="pointer btnProduct"
               type="button"
             >
-              Comprar
+              Show
             </button>
           </div>
         )}
@@ -107,7 +107,7 @@ function ProductRigthBottom({
               animate={btnAnimationShow}
               variants={variantes}
             >
-              Comprar
+              Show
             </motion.button>
           </div>
         )}
