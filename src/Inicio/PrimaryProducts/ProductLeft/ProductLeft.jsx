@@ -85,7 +85,7 @@ function ProductLeft({
             {text.description}
           </span>
           <button className="pointer btnProduct" type="button">
-            Comprar
+            Show
           </button>
         </div>
       )}
@@ -110,7 +110,7 @@ function ProductLeft({
             animate={btnAnimationShow}
             variants={variantes}
           >
-            Comprar
+            Show
           </motion.button>
         </motion.div>
       )}
