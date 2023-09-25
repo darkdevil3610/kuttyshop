@@ -16,17 +16,17 @@ const products = {
   rigth_top: {
     name: 'Organic',
     src: 'https://www.starhealth.in/blog/wp-content/uploads/2022/03/Organic-food.jpg',
-    description: 'El Ruby está equipado con un panel VA que proporciona una pérdida mínima de luz y un contraste superior con colores oscuros más fuertes y definidos, lo que te brindará la respuesta que necesitas.',
+    description: 'Buy organic food products and grocery',
   },
   rigth_bottom: {
     name: 'Organic Food',
     src: 'https://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/content/fi/art/organic-food-on-board-fb-55662cbc11.jpg',
-    description: 'Los Zeus son auriculares premium diseñados para disfrutar al 100% del magnífico mundo sonoro de los mejores juegos.',
+    description: 'Consumers above 35 are most aware of buying organic products',
   },
   bottom: {
-    name: 'Redragon Esmerald',
-    src: 'https://redragon.es/content/uploads/2021/06/EMERALD-1.png',
-    description: 'El Emerald es un monitor gamer de 27" con tecnología IPS, lo que proporciona un ángulo de visión muy amplio, de 178º, y una mejoría sustancial en el color. ',
+    name: 'Organic',
+    src: 'https://c8.alamy.com/comp/2GWB53W/poster-design-with-organic-vegetables-2GWB53W.jpg',
+    description: 'Buy organic food products and grocery',
   },
 };
 
