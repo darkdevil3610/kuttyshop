@@ -8,7 +8,7 @@ function Products() {
   return (
     <div className="Products">
       <span className="titleProducts">
-        Categorias
+        Categories
       </span>
       <div className="BoxForProducts">
         <ViewCategory />
