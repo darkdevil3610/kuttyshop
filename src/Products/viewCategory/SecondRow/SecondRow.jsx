@@ -17,7 +17,7 @@ function SecondRow({ image, text }) {
             className="pointer btnProduct btnSR"
             type="button"
           >
-            Conoce mas
+            Learn More
 
           </Link>
         </div>
