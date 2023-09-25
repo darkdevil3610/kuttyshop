@@ -9,18 +9,18 @@ import ProductRigthBottom from './SecProductRigthBottom/SecProductRigthBottom';
 
 const products = {
   left: {
-    name: 'Redragon Fizz Pro',
-    src: 'https://cdn.shopify.com/s/files/1/2695/9506/products/smallkeyboard_1024x1024@2x.png?v=1629454231',
-    description: 'El K616-RGB FIZZ PRO te asegurará una respuesta ultrarrápida de 1 ms en modo inalámbrico de 2,4 GHz, 0 latencia y 0 input lag.',
+    name: 'Organic Products',
+    src: 'https://www.colorado.edu/ecenter/sites/default/files/styles/large/public/callout/image1.png?itok=hsYKMfzq',
+    description: 'The Positive Impact of Organic Foods ',
   },
   rigth_top: {
-    name: 'Redragon Monitor Ruby',
-    src: 'https://cdn.discordapp.com/attachments/772232222220615710/983895809722560592/modal-ruby-desktop_2.png',
+    name: 'Organic',
+    src: 'https://www.starhealth.in/blog/wp-content/uploads/2022/03/Organic-food.jpg',
     description: 'El Ruby está equipado con un panel VA que proporciona una pérdida mínima de luz y un contraste superior con colores oscuros más fuertes y definidos, lo que te brindará la respuesta que necesitas.',
   },
   rigth_bottom: {
-    name: 'Redragon Zeus 2',
-    src: 'https://dojiw2m9tvv09.cloudfront.net/23332/product/X_h510-35542.png?80',
+    name: 'Organic Food',
+    src: 'https://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/content/fi/art/organic-food-on-board-fb-55662cbc11.jpg',
     description: 'Los Zeus son auriculares premium diseñados para disfrutar al 100% del magnífico mundo sonoro de los mejores juegos.',
   },
   bottom: {
