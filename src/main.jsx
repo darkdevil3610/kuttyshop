@@ -18,7 +18,7 @@ const client = new ApolloClient({
     headers: {
       authorization: getAuth(),
     },
-    uri: import.meta.env.VITE_URL_BACKEND,
+    uri: 'https://first-page-backend-3noioag8k-darkdevil3610s-projects.vercel.app/',
   }),
 });
 
