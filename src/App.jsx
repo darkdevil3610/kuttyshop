@@ -32,7 +32,6 @@ function App() {
   if (loading) return <Loading />;
   return (
     <BrowserRouter
-      basename={import.meta.env.BASE_URL === '/' ? undefined : import.meta.env.BASE_URL}
       future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
     >
       <ScrollToTop />

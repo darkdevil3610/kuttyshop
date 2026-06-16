@@ -5,6 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kutty Shop</title>
+    <script>
+      const redirectKey = 'spa-redirect';
+      const redirect = sessionStorage.getItem(redirectKey);
+      if (redirect) {
+        sessionStorage.removeItem(redirectKey);
+        history.replaceState(null, '', redirect);
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
