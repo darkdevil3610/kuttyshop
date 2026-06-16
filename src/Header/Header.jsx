@@ -17,14 +17,16 @@ function Header() {
   const [open, setOpen] = useState(false);
   const [openModal, setOpenModal] = useState(true);
 
-  const { loading, data } = useQuery(QUERY_MODULE, {
+  const { loading, data, error } = useQuery(QUERY_MODULE, {
     variables: {
       id: '64a4ced84c622ac3d7588672',
     },
   });
 
-  const images = loading ? [] : data.findForModule.image;
-  const texts = loading ? [] : data.findForModule.text;
+  const images = data?.findForModule?.image || [];
+  const texts = data?.findForModule?.text || [];
+  const logoImage = images.find(findID(idImageLogo));
+  const logoText = texts.find(findID(idTextLogo));
 
   const clickOpen = () => {
     setOpen(!open);
@@ -35,11 +37,11 @@ function Header() {
       <a className="homeHeader link" href="/">
         <img
           className="imgLogoHeader"
-          src={loading ? '' : images.find(findID(idImageLogo)).src}
-          alt={loading ? '' : images.find(findID(idImageLogo)).alt}
+          src={logoImage?.src || ''}
+          alt={logoImage?.alt || ''}
         />
         <span className="titleHeader">
-          {loading ? '' : texts.find(findID(idTextLogo)).name}
+          {logoText?.name || ''}
         </span>
       </a>
       <div className="rigth">

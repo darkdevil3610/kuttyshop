@@ -4,9 +4,9 @@ import React from 'react';
 import { findID } from '../../../util';
 
 function BackgroundPreview({ images, texts }) {
-  const imageBg = images.find(findID('649b166f083daa9c8af6e139'));
-  const textBg = texts.find(findID('64a39756de4fc89914038f06'));
-  const title = texts.find(findID('649f8b8fe527c66bfbf3f850'));
+  const imageBg = images.find(findID('649b166f083daa9c8af6e139')) || {};
+  const textBg = texts.find(findID('64a39756de4fc89914038f06')) || {};
+  const title = texts.find(findID('649f8b8fe527c66bfbf3f850')) || {};
   return (
     <Box sx={{
       display: 'flex',
@@ -29,8 +29,8 @@ function BackgroundPreview({ images, texts }) {
         <Grid item xs={6} overflow="hidden" sx={{ position: 'relative' }}>
           <Box
             component="img"
-            src={imageBg.src}
-            alt={imageBg.alt}
+            src={imageBg.src || ''}
+            alt={imageBg.alt || ''}
             sx={{
               m: 0,
               width: '150%',
@@ -69,7 +69,7 @@ function BackgroundPreview({ images, texts }) {
             fontSize: '1.2rem',
           }}
           >
-            {textBg.description}
+            {textBg.description || ''}
           </Typography>
         </Grid>
         <Grid
@@ -80,7 +80,7 @@ function BackgroundPreview({ images, texts }) {
           }}
         >
           <Typography component="h1" variant="h4" sx={{ display: 'flex', flexDirection: 'column', fontWeight: 'bold' }}>
-            {title.name.toUpperCase().split('').map((letter, n) => <span key={`649b166f083daa9c8af6e139${n}`}>{letter}</span>)}
+            {(title.name || '').toUpperCase().split('').map((letter, n) => <span key={`649b166f083daa9c8af6e139${n}`}>{letter}</span>)}
           </Typography>
         </Grid>
       </Grid>

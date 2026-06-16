@@ -8,19 +8,19 @@ import { Stack } from '@mui/material';
 import { ImgRatio, findID } from '../../../util';
 
 function CatalogoPreview({ images, texts }) {
-  const img1 = images.find(findID('64b4969ff62ec34fb6e17e05'));
-  const img2 = images.find(findID('64b496b2f62ec34fb6e17e07'));
-  const img3 = images.find(findID('64b496ddf62ec34fb6e17e09'));
-  const img4 = images.find(findID('64b496faf62ec34fb6e17e0b'));
-  const img5 = images.find(findID('64b49710f62ec34fb6e17e0d'));
-  const img6 = images.find(findID('64b49728f62ec34fb6e17e0f'));
+  const img1 = images.find(findID('64b4969ff62ec34fb6e17e05')) || {};
+  const img2 = images.find(findID('64b496b2f62ec34fb6e17e07')) || {};
+  const img3 = images.find(findID('64b496ddf62ec34fb6e17e09')) || {};
+  const img4 = images.find(findID('64b496faf62ec34fb6e17e0b')) || {};
+  const img5 = images.find(findID('64b49710f62ec34fb6e17e0d')) || {};
+  const img6 = images.find(findID('64b49728f62ec34fb6e17e0f')) || {};
 
-  const txt1 = texts.find(findID('64b495e0f62ec34fb6e17df9'));
-  const txt2 = texts.find(findID('64b49608f62ec34fb6e17dfb'));
-  const txt3 = texts.find(findID('64b49620f62ec34fb6e17dfd'));
-  const txt4 = texts.find(findID('64b49635f62ec34fb6e17dff'));
-  const txt5 = texts.find(findID('64b49648f62ec34fb6e17e01'));
-  const txt6 = texts.find(findID('64b4965bf62ec34fb6e17e03'));
+  const txt1 = texts.find(findID('64b495e0f62ec34fb6e17df9')) || {};
+  const txt2 = texts.find(findID('64b49608f62ec34fb6e17dfb')) || {};
+  const txt3 = texts.find(findID('64b49620f62ec34fb6e17dfd')) || {};
+  const txt4 = texts.find(findID('64b49635f62ec34fb6e17dff')) || {};
+  const txt5 = texts.find(findID('64b49648f62ec34fb6e17e01')) || {};
+  const txt6 = texts.find(findID('64b4965bf62ec34fb6e17e03')) || {};
   return (
     <Box sx={{
       display: 'flex',
@@ -59,7 +59,7 @@ function CatalogoPreview({ images, texts }) {
                     fontWeight="bold"
                     textAlign="center"
                   >
-                    {txt1.name}
+                    {txt1.name || ''}
                   </Typography>
                 </Grid>
                 <Grid item xs={4}>
@@ -90,7 +90,7 @@ function CatalogoPreview({ images, texts }) {
                   />
                 </Box>
                 <Typography sx={{ fontSize: '1.8rem', mb: 3 }} color="text.primary" fontWeight="bold" textAlign="center">
-                  {txt2.name}
+                  {txt2.name || ''}
                 </Typography>
               </Stack>
             </CardContent>
@@ -102,7 +102,7 @@ function CatalogoPreview({ images, texts }) {
               <Grid container>
                 <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                   <Typography sx={{ fontSize: '1.8rem', mb: 3 }} color="text.primary" fontWeight="bold" textAlign="center">
-                    {txt3.name}
+                    {txt3.name || ''}
                   </Typography>
                 </Grid>
                 <Grid item xs={6}>
@@ -133,7 +133,7 @@ function CatalogoPreview({ images, texts }) {
                   />
                 </Box>
                 <Typography sx={{ fontSize: '1.8rem', mb: 3 }} color="text.primary" fontWeight="bold" textAlign="center">
-                  {txt4.name}
+                  {txt4.name || ''}
                 </Typography>
               </Stack>
             </CardContent>
@@ -154,7 +154,7 @@ function CatalogoPreview({ images, texts }) {
                   />
                 </Box>
                 <Typography sx={{ fontSize: '1.8rem', mb: 3 }} color="text.primary" fontWeight="bold" textAlign="center">
-                  {txt5.name}
+                  {txt5.name || ''}
                 </Typography>
               </Stack>
             </CardContent>
@@ -175,7 +175,7 @@ function CatalogoPreview({ images, texts }) {
                   />
                 </Box>
                 <Typography sx={{ fontSize: '1.8rem', mb: 3 }} color="text.primary" fontWeight="bold" textAlign="center">
-                  {txt6.name}
+                  {txt6.name || ''}
                 </Typography>
               </Stack>
             </CardContent>

@@ -18,7 +18,7 @@ const client = new ApolloClient({
     headers: {
       authorization: getAuth(),
     },
-    uri: 'first-page-backend-production.up.railway.app',
+    uri: 'https://first-page-backend-production.up.railway.app/',
   }),
 });
 

@@ -31,7 +31,7 @@ function App() {
   if (error) return <ScreenError errorCode={error.code} msgError={error.message} />;
   if (loading) return <Loading />;
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL === '/' ? undefined : import.meta.env.BASE_URL}>
       <ScrollToTop />
       <Header />
       <Routes>

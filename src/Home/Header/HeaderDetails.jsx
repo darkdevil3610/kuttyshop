@@ -7,8 +7,8 @@ import {
 import { UPDATE_MODULE } from './Mutation';
 
 function HeaderDetails({ images, texts }) {
-  const imgLogo = images.find(findID('649e0f0de59b27af2756c89d'));
-  const textLogo = texts.find(findID('649f8b8fe527c66bfbf3f850'));
+  const imgLogo = images.find(findID('649e0f0de59b27af2756c89d')) || {};
+  const textLogo = texts.find(findID('649f8b8fe527c66bfbf3f850')) || {};
 
   const [refImgLogo, gdImageLogo] = useForm();
   const [refTextLogo, gdTextLogo] = useForm();

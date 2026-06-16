@@ -9,11 +9,14 @@ import SecundaryProducts from './SecundaryProducts/SecundaryProducts';
 import { QUERY_MODULE } from '../Operations/Query';
 
 function Inicio() {
-  const { loading, data } = useQuery(QUERY_MODULE, {
+  const { loading, data, error } = useQuery(QUERY_MODULE, {
     variables: {
       id: '64a4dbacb464c4051e9b4a73',
     },
   });
+  if (error) {
+    return <div style={{ padding: '2rem', textAlign: 'center' }}>Unable to load the home content.</div>;
+  }
   if (loading) {
     return (
       <div style={{
@@ -25,8 +28,12 @@ function Inicio() {
     );
   }
 
-  const images = data.findForModule.image;
-  const texts = data.findForModule.text;
+  const images = data?.findForModule?.image || [];
+  const texts = data?.findForModule?.text || [];
+
+  if (!data?.findForModule) {
+    return <div style={{ padding: '2rem', textAlign: 'center' }}>Home content is not available right now.</div>;
+  }
 
   return (
     <>

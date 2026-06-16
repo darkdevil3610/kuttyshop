@@ -11,7 +11,7 @@ import HeatherDetails from './HeaderDetails';
 import { QUERY_MODULE } from '../../Operations/query';
 
 function HeaderIndex() {
-  const { loading, data } = useQuery(QUERY_MODULE, {
+  const { loading, data, error } = useQuery(QUERY_MODULE, {
     variables: {
       id: '64a4ced84c622ac3d7588672',
     },
@@ -21,6 +21,8 @@ function HeaderIndex() {
   const suBHangleChange = () => {
     setSubAcor1((n) => !n);
   };
+  const images = data?.findForModule?.image || [];
+  const texts = data?.findForModule?.text || [];
   return (
     <>
       <Box display="flex" alignItems="center">
@@ -38,8 +40,8 @@ function HeaderIndex() {
             ? <CircularProgress />
             : (
               <HeatherSummary
-                images={data.findForModule.image}
-                texts={data.findForModule.text}
+                images={images}
+                texts={texts}
               />
             )}
         </AccordionSummary>
@@ -48,8 +50,8 @@ function HeaderIndex() {
             ? <CircularProgress />
             : (
               <HeatherDetails
-                images={data.findForModule.image}
-                texts={data.findForModule.text}
+                images={images}
+                texts={texts}
               />
             )}
         </AccordionDetails>

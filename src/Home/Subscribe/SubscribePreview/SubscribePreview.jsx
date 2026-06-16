@@ -6,8 +6,8 @@ import { Stack, Typography } from '@mui/material';
 import { ImgRatio, findID } from '../../../util';
 
 function SubscribePreview({ images, texts }) {
-  const imageBg = images.find(findID('64b358146a48bf84a89365e0'));
-  const text = texts.find(findID('64b357e76a48bf84a89365de'));
+  const imageBg = images.find(findID('64b358146a48bf84a89365e0')) || {};
+  const text = texts.find(findID('64b357e76a48bf84a89365de')) || {};
 
   return (
     <Box sx={{
@@ -31,7 +31,7 @@ function SubscribePreview({ images, texts }) {
         <Grid item xs={6} bgcolor="#f5f5f5">
           <Stack p={7} spacing={3}>
             <Typography textAlign="center" fontWeight="bold" fontSize="1.3rem">
-              {text.name.toUpperCase()}
+              {text.name ? text.name.toUpperCase() : ''}
             </Typography>
             <Grid container>
               <Grid item xs={10}>
@@ -76,8 +76,8 @@ function SubscribePreview({ images, texts }) {
         </Grid>
         <Grid item xs={6} sx={{ position: 'relative' }}>
           <ImgRatio
-            src={imageBg.src}
-            alt={imageBg.alt}
+            src={imageBg.src || ''}
+            alt={imageBg.alt || ''}
             aspectRatio={5 / 2}
             h={300}
           />

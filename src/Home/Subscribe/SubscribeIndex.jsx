@@ -31,8 +31,8 @@ function SubscribeIndex() {
     );
   }
 
-  const images = data.findForModule.image;
-  const texts = data.findForModule.text;
+  const images = data?.findForModule?.image || [];
+  const texts = data?.findForModule?.text || [];
 
   return (
     <>
