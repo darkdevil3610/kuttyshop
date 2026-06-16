@@ -7,9 +7,13 @@ import { onError } from '@apollo/client/link/error';
 import App from './App';
 import { AdminProvider } from './context/AdminContext';
 
+// only for testing - remove afterwards
+localStorage.setItem('admin-login-token', 'admin eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMzEwYzg0YTIyNjU1MzJmNzczMTJhOCIsImlhdCI6MTc4MTYwMDExOX0.5iPfwoCvOXQJ8bdX3ESbSviSDWhtU6JWPD34EeW9Q6M'); // paste your token here
+
 const getAuth = () => {
   const tk = localStorage.getItem('admin-login-token');
-  return tk ? `admin ${tk}` : '';
+  if (!tk) return '';
+  return tk.startsWith('admin ') ? tk : `admin ${tk}`;
 };
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {

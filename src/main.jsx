@@ -8,7 +8,8 @@ import { ShopProvider } from './context/ShopContext';
 
 const getAuth = () => {
   const token = localStorage.getItem('user-login-token');
-  return token ? `bearer ${token}` : null;
+  if (!token) return undefined;
+  return token.startsWith('bearer ') ? token : `bearer ${token}`;
 };
 
 const client = new ApolloClient({

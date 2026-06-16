@@ -18,8 +18,10 @@ export const useShop = () => {
 
 export function ShopProvider({ children }) {
   const [user, setUser] = useState(null);
-  const { data, refetch, loading } = useQuery(QUERY_USERDATA);
-  const [token, setToken] = useState(null);
+  const [token, setToken] = useState(() => localStorage.getItem('user-login-token'));
+  const { data, refetch, loading } = useQuery(QUERY_USERDATA, {
+    skip: !token,
+  });
   const client = useApolloClient();
   const [cart, setCart] = useState([]);
 
@@ -78,8 +80,8 @@ export function ShopProvider({ children }) {
   const isLoged = () => !!user;
 
   useEffect(() => {
-    if (localStorage.getItem('user-login-token')) refetch();
-  }, []);
+    if (token) refetch();
+  }, [token, refetch]);
 
   const logout = () => {
     setUser(null);
